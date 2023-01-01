@@ -1,0 +1,5 @@
+Student name: Hohyun Lee
+Student number: 683070
+Studnet class: IT2A
+URL student GitHub website: https://hohyunLee96.github.io
+URL student GitHub repository: https://github.com/hohyunLee96/hohyunLee96.github.io
