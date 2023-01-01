@@ -75,7 +75,10 @@ a:hover{
 }
 
 #logo { 
-    height: auto;
+    position: absolute;
+    right: 45%;
+    top:35%;
+    height: 120px;
     max-width: 120px;
 }
 
@@ -870,10 +873,9 @@ a:hover{
     }
 
     #navigationBar {
-        position: absolute;
-        right:0;
+        position: fixed;
         height: 80px;
-        width: 30%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         transition: none;
