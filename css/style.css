@@ -1,0 +1,1244 @@
+html, body {  
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#indexBody {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+.indexHyperLink{    
+    font-size: 1.3em;
+}
+a:visited{
+    color: #00008B;
+}
+a:hover{
+    color:#ffc0cb;
+}
+#bodyProduct {
+    display: grid;
+    grid-row-gap: 0;
+    grid-gap: 0;
+    grid-column-gap: 0;
+}
+#headerMain {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 400px;
+    width: 100%;
+    order: 0;
+    background-image: url(../images/BlackColor.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#mainHeaderGrid {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/BlackColor.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#headerText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #C4A484;
+}
+
+#headerText h1, h2 {
+    width: 100%;
+    margin: 0;
+    text-shadow: 2px 2px #00000033;
+}
+
+#headerText h1 {
+    font-size: 2cm;
+}
+
+#HeaderText h2 {
+    font-size: 2.2em;
+}
+
+#logo { 
+    height: auto;
+    max-width: 120px;
+}
+
+#navigationBar {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    background: #87ceeb;
+    border-bottom: 2px solid;
+    border-color: #A020F0;
+    border-width:10px;
+    transition: 0.3s ease-in-out;
+}
+
+#navigationBar-options {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#navigationBar li {
+    flex: 0 1 auto;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#navigationBar li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2b2b2b;
+    text-indent: 8px;
+}
+
+#navigationBar li a:hover {
+    color: #FFC72B;
+    border-color: #FFC72B;
+    border-style: double;
+    border-bottom: 2px solid;
+}
+
+#navigationBar-buttons {
+    display: none;
+}
+
+#mainSection {
+    flex: 1 1 auto;
+    width: 30%;
+    order: 1;
+    border-style:double;
+    border-right: 1px solid;
+    border-color: #2b2b2b;
+    border-width:10px;
+}
+
+#mainSectionGrid {
+    display: grid;
+    margin: 20px;
+}
+
+#sectionContact {
+    flex: 1 1 auto; 
+    width: 30%;
+    order: 1;
+    border-right: 1px solid;
+    border-color:#2b2b2b;
+}
+
+#mainSectionGrid h3 {
+    width: 100%;
+}
+
+#mainSection h4 {
+    text-align: center;
+}
+
+#mainSection h3 {    
+    text-align: center;
+}
+
+#articlesGrid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr; 
+    grid-gap: 11px;
+    grid-template-areas: 
+    "Grid2 Grid1 Grid3"
+    "Grid2 Grid1 Grid3"
+    "Grid5 Grid1 Grid3"
+    "Grid5 Grid1 Grid4"
+    "Grid5 Grid1 Grid4"
+    "Grid5 Grid1 Grid4"
+    "Grid5 Grid6 Grid6"; 
+}
+
+#articlesGrid h4{
+    width: 100%;
+    margin: 0;
+}
+
+#articlesGrid h4::first-letter {
+    font-weight: bold;
+    font-size: 2.1em;
+}
+
+.ProductArticle1 {
+    grid-area: Grid1;
+}
+
+.ProductArticle2 {
+    grid-area: Grid2;
+}
+
+.ProductArticle3 {
+    grid-area: Grid3;
+}
+
+.ProductArticle4 {
+    grid-area: Grid4;
+}
+
+.ProductArticle5 {
+    grid-area: Grid5;
+}
+
+.ProductArticle6 {
+    grid-area: Grid6;
+}
+
+.ProductGrid {
+    border: 1px solid;
+    border-color: #b1b1b1;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.ProductGrid strong {
+    font-size: 1.4em;
+    margin: 15px;
+    color: #FF0000;
+    text-transform: capitalize;
+}
+
+.ProductGrid p {
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+#displayVideo {
+    display: flex;
+    order: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#displayVideo h5 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#displayVideo video {
+    width: 60%;
+    margin: 30px;
+    border-radius: 30px;
+    border: double;
+    border-color: #2b2b2b;
+    border-width: 5px;
+}
+
+#articles {
+    flex: 0 0 100%;
+    order: 1;
+    overflow: hidden;
+}
+
+.sportArticle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    height: 100%;
+    width: 100%;
+}
+
+.sportArticle header {
+    width: 100%;
+}
+
+.sportArticle header h3 {
+    font-size: 1.3em;
+    letter-spacing: 4px;
+}
+
+.sportArticle p {
+    width: 50%;  
+    height: auto;  
+    word-spacing: 3px;
+    line-height: 25px;
+}
+
+.sportArticle a { 
+    width: 50%;
+}
+
+.sportArticle figure {
+    width: 50%;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.sportArticle figure img {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.sportArticle figcaption {    
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #2b2b2b;
+}
+
+.sportArticle footer {
+    width: 100%;
+}
+
+#asideIndex {
+    order: 2;
+    height: 100%;
+    width: 300px;
+}
+
+#asideIndex p {
+    word-spacing: 3px;
+    line-height: 25px;
+    color: #2b2b2b;
+}
+
+#asideTrendsContact {
+    order: 2;
+    height: auto;
+    width: 300px;
+}
+
+#asideTrendsContact p {
+    color: #2b2b2b;
+}
+
+#asideProductsGrid {
+    display: grid; 
+    order: 2;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 20px; 
+    grid-template-areas: 
+    "Grid1 Grid2 Grid3"; 
+    margin-top: 20px;
+}
+
+#asideProducts {
+    display: grid; 
+    order: 2;
+    width: 300px;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 20px; 
+    grid-template-areas: 
+    "Grid1"
+    "Grid2"
+    "Grid3"; 
+    padding: 10px;  
+    margin-top: 20px;
+}
+
+#asideContact {
+    display: grid; 
+    order: 2;
+    width: 300px;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 20px; 
+    grid-template-areas: 
+    "Grid1"
+    "Grid2"
+    "Grid3"; 
+    padding: 10px;  
+    margin-top: 20px;
+}
+
+.productArticle1 {
+    grid-area: Grid1;
+}
+
+.productArticle2 {
+    grid-area: Grid2;
+}
+
+.productArticle3 {
+    grid-area: Grid3;
+}
+
+.productArticle {
+    overflow: hidden;
+}
+
+.productArticle a {
+    height: 100%;
+    width: 100%;
+}
+
+.productPhoto {
+    height: 100%;
+    width: 100%;
+    float: right;
+    margin: 0;    
+}
+
+.productPhoto img {
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.productPhoto figcaption {
+    text-align: center;
+}
+
+#watchTable {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#watchTable table {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+#watchTable table, th, td {
+    padding: 15px;
+    border-top: 1px solid;
+    border-color: #2b2b2b;
+}
+
+#watchTable table td:nth-child(1) {
+    background: #ff0;
+}
+
+#watchTable table td + td {
+    border: 1px solid #2c2c2c;
+}
+
+#watchTable a {
+    color: #ffffff;
+    padding: 10px;
+    background: #2b2b2b;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#watchTable a:hover { 
+    background: #FF0000;
+}
+
+#watchTable table tbody tr { 
+    width: 100%;
+}
+
+#watchTable tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#watchTable tr:nth-child(even) {
+    background-color: #cff;
+}
+
+#watchTable footer {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+#contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contactFormTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+#contactForm legend {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#contactForm fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+#contactForm fieldset input {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#contactForm fieldset input[type=text] {
+    width: 98%;
+}
+
+#contactForm fieldset input[type=text]:nth-child(7) {
+    height: 100px;
+}
+
+#contactForm fieldset input[type=submit] {
+    width: 100px;
+    height: 30px;
+    background: #2b2b2b;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#contactForm fieldset input[type=submit]:visited {
+    background: #FF0000;
+}
+
+#contactForm fieldset input[type=submit]:hover {
+    background: #FF0000;
+}
+#endFooter {    
+    display: flex;
+    order: 4;
+    height: 50px;
+    width: 100%;
+    background-color: #2b2b2b;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#cookie {
+    position: fixed;
+    bottom: 0;
+    right:0;
+    width: 300px;
+    height: 65px;
+    text-align: center;
+    background-color: #FA0;
+    opacity: 50%;
+    z-index: 9999;
+}
+#cookie h3{
+    font-family: 'Notable', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+#cookie h3,  p, a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+}
+/* desktop size */
+@media only screen and (min-width: 1280px) {
+
+    .sportArticle footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sportArticle footer a {
+        height: 50px;
+    }
+}
+/* tablet size */
+@media only screen and (max-width: 1279px) {
+    .sportArticle{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sportArticle header {
+        order:0;
+        width: 100%;
+    }
+    .sportArticle figure img {
+        order:1;
+        width: 100%;
+        height: 400px;
+        border-radius: 15px;
+    }
+    .sportArticle p {
+        order:2;
+        width: 50%;  
+        height: auto;  
+        word-spacing: 2px;
+        line-height: 18px;
+    }
+    .indexHyperLink{   
+        order:3; 
+        font-size: 1.3em;
+    }
+
+    #articlesGrid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr; 
+        grid-gap: 10px;
+        grid-template-areas: 
+        "Grid1 Grid2"
+        "Grid1 Grid2"
+        "Grid3 Grid2"
+        "Grid3 Grid5"
+        "Grid3 Grid5"
+        "Grid3 Grid5"
+        "Grid6 Grid6"
+        "Grid6 Grid6"; 
+    }    
+    .ProductArticle1 {
+        grid-area: Grid1;
+    }
+
+    .ProductArticle2 {
+        grid-area: Grid2;
+    }
+
+    .ProductArticle3 {
+        grid-area: Grid3;
+    }
+
+    .ProductArticle4 {
+        display: none;
+    }
+
+    .ProductArticle5 {
+        grid-area: Grid5;
+    }
+
+    .ProductArticle6 {
+        grid-area: Grid6;
+    }
+
+    #asideProductsGrid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 20px; 
+        grid-template-areas: 
+        "Grid1 Grid2"; 
+        margin-top: 20px;
+    }
+
+    #asideProducts {
+        display: grid; 
+        width: 100%;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 20px; 
+        grid-template-areas: 
+        "Grid1 Grid2"; 
+        margin-top: 20px;
+    }
+
+    .productArticle1 {
+        display: none;
+    }
+
+    .productArticle2 {
+        grid-area: Grid1;
+    }
+
+    .productArticle3 {
+        grid-area: Grid2;
+    }
+
+    #asideContact {
+        display: grid; 
+        order: 2;
+        width: 300px;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 20px; 
+        grid-template-areas: 
+        "Grid1"
+        "Grid2"
+        "Grid3"; 
+        margin-top: 20px;
+        padding: 10px;  
+    }
+
+    .productArticle1Contact {
+        grid-area: Grid1;
+        display: block;
+    }
+
+    .productArticle2Contact {
+        grid-area: Grid2;
+    }
+
+    .productArticle3Contact {
+        display: block;
+        grid-area: Grid3;
+    }
+
+    .productGridArticle1 {
+        grid-area: Grid1;
+        display: block;
+    }
+
+    .productGridArticle2 {
+        grid-area: Grid2;
+    }
+
+    .productGridArticle3 {
+        display: none;
+        grid-area: Grid3;
+    }
+
+    .productArticle figcaption {
+        font-size: 1.6em;
+    }    
+
+    #asideIndex {
+        height: 180px;
+    }
+
+    #asideTrendsContact {
+        order: 4;
+        height: 180px;
+    }
+
+    #headerMain {
+        height: 300px;
+    }
+
+    #headerMain h1 {
+        font-size: 4em;
+    }
+
+    #headerMain h2 {
+        font-size: 2em;
+    }
+
+    #navigationBar {
+        height: 60px;
+    }
+    #navigationBar li a {
+        font-size: 0.88em;
+    }
+
+    #navigationBar-menuOptions { 
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .menu {
+        overflow: hidden;
+        margin: 0;
+    }
+
+    #mainSection {
+        order: 2;
+        width: 100%;
+        border: none;
+    }
+
+    #sectionContact {
+        order: 2;
+        flex: auto;
+        border: none;
+    }
+
+    #contactForm fieldset {
+        width: 80%;
+    }
+
+    #asideIndex {
+        order: 1;
+        height: auto;
+        width: 100%;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    #asideIndex ol {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #asideIndex li {
+        word-wrap: break-word;
+        font-size: 1.3em;
+        padding-right: 20px;
+    }
+
+    #asideTrendsContact {
+        order: 2;
+        height: auto;
+        width: 300px;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    #asideTrendsContact ol {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #asideTrendsContact li {
+        word-wrap: break-word;
+        font-size: 1.3em;
+        padding-right: 20px;
+    }
+
+    .sportArticle {
+        margin-bottom: 100px;
+    }    
+    #displayVideo {
+        pointer-events: none;
+    }
+
+    #displayVideo video {
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+    }
+
+    .sportArticle {
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .sportArticle a {
+        margin: 0;
+    }
+    .sportArticle figure {
+        width: 300px;
+    }
+
+    .sportArticle footer {
+        height: 80px;
+    }
+    #watchTable tr,td {
+        padding: 0;
+    }
+}
+/* mobile size */
+@media only screen and (max-width: 480px) {
+
+    #indexBody {
+        font-size: 1.2em;
+        margin-top: 80px;
+    }
+
+    #bodyProduct {
+        margin-top: 80px;
+        font-size: 1.2em;
+    }
+
+    #navigationBar {
+        position: absolute;
+        right:0;
+        height: 80px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        transition: none;
+        background: none;
+    }
+
+    #navigationBar li a { 
+        color: #ffffff;
+    }
+
+    #navigationBar li a:active {
+        color: #009B77;
+        border: none;
+        text-decoration: none;
+    }
+
+    #navigationBar li a:hover {
+        border: none;
+    }
+
+    #navigationBar:target {
+        display: flex;
+        height: 100%;        
+    }
+
+    #navigationBar:target > #navigationBar-options{
+        display: flex;
+        height: 100%;
+    }
+
+    #navigationBar:target #displayMenu {
+        display: none;
+    }
+
+    #navigationBar:target #hideMenu {
+        display: flex;
+    }
+
+    #navigationBar-buttons {
+        height: 100px;
+        width: 100%; 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-bottom: 2px solid;
+        background: #ffffff;
+        padding: 0;
+        margin:0;
+        transition: 0.3s ease-in-out;
+        pointer-events: all;
+    }
+
+    #navigationBar-buttons li {
+        margin-right: 30px;
+    }
+    
+    li.menu {
+        height: 25%;
+    }
+
+    #hideMenu {
+        display: none;
+    }
+
+    #displayMenu i{
+        font-size: 3.1em;
+        text-decoration: none;
+        font-weight: bold;
+        color: #2b2b2b;
+    }
+
+    #hideMenu i {
+        font-size: 3.3em;
+        text-decoration: none;
+        color: #2b2b2b;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #displayVideo {
+        pointer-events: none;
+        display: none;
+    }
+
+    #navigationBar-options {
+        height: 0%;
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-direction: column;    
+        align-items: center;    
+        background: #2b2b2b;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        height: 12em;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    .menu a {
+        font-size: 3.1em;
+    }
+
+    .menu i {
+        font-size: 0.9em;
+    }
+
+    .menu a:active {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    #articlesGrid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr; 
+        grid-gap: 11px;
+        grid-template-areas: 
+        "Grid5 Grid5"
+        "Grid5 Grid5"
+        "Grid5 Grid5"
+        "Grid3 Grid3"
+        "Grid3 Grid3"
+        "Grid3 Grid3"
+        "Grid2 Grid2"
+        "Grid2 Grid2"
+        "Grid2 Grid2"
+        "Grid1 Grid1"
+        "Grid1 Grid1"
+        "Grid1 Grid1"; 
+    }
+    
+    .ProductArticle1 {
+        grid-area: Grid1;
+    }
+    
+    .ProductArticle2 {
+        grid-area: Grid2;
+    }
+    
+    .ProductArticle3 {
+        grid-area: Grid3;
+    }
+    
+    .ProductArticle4 {
+        display: none;
+    }
+    
+    .ProductArticle5 {
+        grid-area: Grid5;
+    }
+    
+    .ProductArticle6 {
+        display: none;
+    }
+
+    .ProductGrid strong {
+        font-size: 3.1em;
+        margin: 16px;
+        color: #FF0000;
+        text-transform: capitalize;
+    }
+    
+    .ProductGrid p {
+        font-size: 1.1em;
+        padding: 16px;
+    }
+
+    #asideIndex {
+        height: auto;
+        width: 100%;
+        order: 1;
+        padding-top: 21px;
+        overflow: hidden;
+    }
+
+    #asideIndex ol {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #asideIndex li {
+        word-wrap: break-word;
+        font-size: 1.3em;
+        padding-right: 20px;
+    }
+
+    #asideTrendsContact {
+        height: auto;
+        width: 100%;
+        order: 3;
+        overflow: hidden;
+        padding-top: 20px;
+    }
+
+    #asideTrendsContact ol {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #asideTrendsContact li {
+        word-wrap: break-word;
+        font-size: 1.3em;
+        padding-right: 21px;
+    }
+
+    #articles {
+        margin-left: 0px;
+    }
+
+    .sportArticle {
+        margin: 0;
+    }
+
+    .sportArticle a {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .sportArticle p {
+        width: 100%;
+    }
+
+    .articlesGrid p {
+        width: 95%;
+        font-size: 1.2em;
+    }
+
+    .articlesGrid h4 {
+        font-size: 0.5em;
+    }
+
+    #headerMain {
+        height: 400px;
+    }
+
+    #mainHeaderGrid {
+        height: 400px;
+    }
+
+    #headerMain h1 {
+        font-size: 16vw;
+    }
+
+    #mainHeaderGrid h1 {
+        font-size: 16vw;
+    }
+
+    #headerMain h2 {
+        font-size: 13vw;
+    }
+
+    #mainHeaderGrid h2 {
+        font-size: 13vw;
+    }
+
+    #mainHeaderGrid {
+        height: 400px;
+    }
+
+    #mainSection {
+        width: 100%;
+    }
+    #asideProductsGrid {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 20px; 
+        grid-template-areas: 
+        "Grid1"
+        "Grid2"
+        "Grid3"; 
+        margin-top: 20px;
+    }
+
+    #asideProducts {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 20px; 
+        grid-template-areas: 
+        "Grid1"
+        "Grid2"
+        "Grid3"; 
+        margin-top: 20px;
+    }   
+
+    #asideContact {
+        width: 100%;
+    }
+
+    .productArticle1 {
+        grid-area: Grid1;
+        display: block;
+    }
+
+    .productArticle2 {
+        grid-area: Grid2;
+    }
+
+    .productArticle3 {
+        display: block;
+        grid-area: Grid3;
+    }
+
+    .productGridArticle1 {
+        grid-area: Grid1;
+        display: block;
+    }
+
+    .productGridArticle2 {
+        grid-area: Grid2;
+    }
+
+    .productGridArticle3 {
+        display: block;
+        grid-area: Grid3;
+    }
+
+    .productArticle figcaption {
+        font-size: 1.4em;
+    }
+
+    #watchTable { 
+        font-size: 1.4em;
+        overflow: hidden;
+    }
+
+    #watchTable tbody { 
+        width: 100%;
+    }
+
+    #watchTable tr, td { 
+        max-width: 100%;
+        font-size: 2.9vw;
+        padding: 0;
+    }
+
+    #cookie {
+        height: 90px;
+    }
+
+    #cookie\ h3 {
+        font-size: 1.3em;
+    }
+
+    #cookie p {
+        font-size: 0.9em;
+    }
+
+    #cookie a {
+        font-size: 1.1em;
+    }
+
+    #endFooter {
+        height: 90px;
+        font-size: 2.1em;
+    }
+}
