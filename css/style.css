@@ -741,7 +741,7 @@ a:hover{
     }
 
     #headerMain {
-        height: 300px;
+        height: 400px;
     }
 
     #headerMain h1 {
@@ -952,7 +952,6 @@ a:hover{
         text-decoration: none;
         color: #2b2b2b;
     }
-
     #logo {
         display: none;
     }
