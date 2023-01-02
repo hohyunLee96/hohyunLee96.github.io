@@ -859,7 +859,7 @@ a:hover{
     }
 }
 /* mobile size */
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 480px) {
 
     #indexBody {
         font-size: 1.2em;
